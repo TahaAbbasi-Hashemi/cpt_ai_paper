@@ -1,0 +1,43 @@
+\documentclass{article}
+
+% -- Packages ---
+\usepackage{graphicx} % In order to have images
+\usepackage{biblatex} % Citations
+\usepackage{glossaries} % Acrynoms
+
+% --- Configuration Biblatex ---
+%\ExecuteBibliographyOptions{style=numeric}
+\ExecuteBibliographyOptions{mincitenames=1}
+\ExecuteBibliographyOptions{maxcitenames=1}
+\ExecuteBibliographyOptions{minbibnames=98}
+\ExecuteBibliographyOptions{maxbibnames=99}
+\ExecuteBibliographyOptions{uniquelist=false}
+
+% --- Configuration Glossaries ---
+\setglossarystyle{long}
+
+
+\title{CPT AI Paper}
+\author{Taha Abbasi-Hashemi}
+
+\begin{document}
+    % --- Backend Operations ---
+    \input{share/glossaries}
+    
+    
+    % --- Content ---
+    \section{Abstract}
+    \input{content/abstract}
+    
+    \section{Introduction}
+    \input{content/introduction}
+    
+    \section{Methodology}
+    \input{content/methodology}
+    
+    \section{Results}
+    \input{content/results}
+    
+    \section{Conclusion}
+    \input{content/conclusion}
+\end{document}
